@@ -117,7 +117,7 @@ def draw(title, suptitle):
 
 
 # генерируем список, множество и переменные
-# в listOfCoordinates будут хранится координаты точек и аттрибут в формате (x, y, attribute)
+# в listOfCoordinates будут хранится координаты точек и атрибут в формате (x, y, attribute)
 # setOfCoordinates нужен, чтобы координаты при рандомном генерировании не повторялись
 listOfCoordinates = []
 setOfCoordinates = set()
@@ -125,7 +125,7 @@ x = 0
 y = 0
 attribute = 0
 
-# генерируем координаты точек в листе, аттрибут всем точкам даем по умолчанию - 0
+# генерируем координаты точек в листе, атрибут всем точкам даем по умолчанию - 0
 while len(listOfCoordinates) < 16:
     listOfCoordinates.append([x, y, attribute])
     x += 1
@@ -133,11 +133,11 @@ while len(listOfCoordinates) < 16:
         x = 0
         y += 1
 
-# генерируем агента, его аттрибут - 1
+# генерируем агента, его атрибут - 1
 agentNumber = rd(0, 15)  # генерируем номер агента в сете
 agentNumber = number_generate(agentNumber, 1)
 
-# генерируем препятсвия, их аттрибут - 2
+# генерируем препятсвия, их атрибут - 2
 obstacleNumber = rd(0, 15)
 obstacleNumberList = []
 i = 0
@@ -146,7 +146,7 @@ while i < 3:
     i += 1
     obstacleNumberList.append(obstacleNumber)
 
-# генерируем финиш, его аттрибут - 3
+# генерируем финиш, его атрибут - 3
 finishNumber = rd(0, 15)
 finishNumber = number_generate(finishNumber, 3)
 
